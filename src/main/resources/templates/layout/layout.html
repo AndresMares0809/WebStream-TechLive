@@ -9,6 +9,7 @@
     
 	<title>TechLive - Store</title>
 	
+	<link rel="stylesheet" th:href="@{/css/bootstrap.css}">
 	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 	<link rel="stylesheet" th:href="@{/css/chosen.min.css}">
 	<link rel="stylesheet" th:href="@{/css/all.css}">
@@ -19,7 +20,7 @@
 <body>
   	<header th:fragment="header">
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand sticky-top  navbar-dark bg-dark sticky-top">
 			<a class="navbar-brand" href="#">TechLive</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -35,7 +36,6 @@
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 					</form>
 				</nav>
-
 
 				<ul class="navbar-nav">
 					<li class="nav-item active"><a class="nav-link" href="#">Cuenta
@@ -72,9 +72,9 @@
 									class="dropdown-item" href="#">Ram16R3</a> <a
 									class="dropdown-item" href="#">Ram16R4</a>
 							</div>
-
-
 						</div>
+					</li>
+				</ul>
 			</div>
 		</nav>
 
